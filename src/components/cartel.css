@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cartel{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 430px;
+    height: 170px;
+    box-shadow: 0px 0px 10px rgba(37, 37, 37, 0.25);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.logo{
+    box-shadow: 0px 0px 10px rgba(37, 37, 37, 0.25);
+    border-radius: 6px; 
+    width: fit-content;
+    height: 120px;
+}
+
+.containsText{
+    position: relative;
+    bottom: 14px;
+    height: fit-content;
+    width: 290px;
+    margin-left: 52px;
+}
+
+.title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: start;
+   
+}
+
+.text{
+    font-size: 10.5px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: start;
+}
+
+.btn{
+    width: 95px;
+    height: 28px;
+    background-color: #238794;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px; 
+    margin-right: 300px;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 672px) {
+    .cartel{
+        top: 0;
+        left: 0;
+        transform: none;
+        height: 450px;
+        width: 320px;
+        margin: 50px;
+    }
+
+    .container{
+        grid-template-columns: 100%;
+        grid-template-rows:  30% 70%;
+    }
+
+    .logo{
+        margin: 0 auto;
+    }
+
+    .containsText{
+        position: static;
+        margin: 0 auto;
+        width: fit-content;
+    }
+}
